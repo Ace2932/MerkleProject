@@ -63,8 +63,15 @@ def gen_merkle_proof(leaves, pos):
 
 #######  YOUR CODE GOES HERE                              ######
 #######     to hash internal nodes in the tree use the    ######
-#######     function hash_internal_node(left,right)       ######
+#######     func tion hash_internal_node(left,right)       ######
+            left_child = False
+            child_test = level_pos % 2
+            if (child_test == 0){
+                left_child = true
+            }
 
+           
+            
 
     # return a list of hashes that makes up the Merkle proof
     return path
